@@ -13,6 +13,24 @@ const conteudo = [
         message:null,
         linkDoc:null
     },
+    {
+        videoUrl:null,
+        title:null,
+        message:null,
+        linkDoc:null
+    },
+    {
+        videoUrl:'https://www.youtube.com/embed/OSWGHhjSFbs?start=33',
+        title:'Mercado de trabalho',
+        message:'Muitas empresas estão contratando profissionais de segurança cibernética. É uma das áreas que mais crescem no mercado, sendo uma das principais tendências em tecnologia nos próximos anos.Esta alta demanda de profissionais da área, deve-se à popularização e democratização da internet. Cada vez mais pessoas e empresas estão conectadas, e, com isso, mais dados são gerados. Consequentemente, os ciberataques estão ficando cada vez mais frequentes e complexos.',
+        linkDoc:'https://drive.google.com/file/d/1Lh-OciuUTc3xmY3ewPZQgyD4qhMTREDS/view?usp=sharing'
+    },
+    {
+        videoUrl:null,
+        title:null,
+        message:null,
+        linkDoc:null
+    },
 ]
 
 let loaded = false;
