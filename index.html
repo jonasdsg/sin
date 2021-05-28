@@ -20,49 +20,25 @@
     <main class="container-fluid" id="main">
 
         <div class="row">
-            <div class="col-md-12 col-lg-8 ratio ratio-16x9 mb-2">
+            <div  id="video-content"> 
 
-                <iframe src="https://www.youtube.com/embed/OpT0MMYoAk0" title="youtube player" width="360"
-                height="240"></iframe>
-                
             </div>
-            <div class="col-md-12 col-lg-8">
-                <p class="h1">h1. Bootstrap heading</p>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium praesentium illum
-                    tempora maiores impedit debitis ratione omnis eveniet quidem dolores. Excepturi quos quas
-                    necessitatibus! Doloribus ut mollitia non at quisquam.</p>
-            
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Saiba mais
-                </button>
-            
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veritatis
-                                    exercitationem nisi ut sapiente, placeat quos, fuga at esse dignissimos libero.
-                                    Doloribus aspernatur facilis corporis dolore neque incidunt culpa odio?</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="input-group mb-2">
+                <input type="checkbox" name="description" id="description" class="btn-check">
+                <label for="description" class="btn btn-light">Mostrar descrição</label>
             </div>
-            <div class="col-md-12 col-lg-4">
+
+            <div id="textContent">
+               
+            </div>
+
+            <div class="col-md-12 col-lg-4" id="topics">
                 <ul class="list-group">
-                    <li class="list-group-item">1</li>
-                    <li class="list-group-item">2</li>
-                    <li class="list-group-item">3</li>
-                    <li class="list-group-item">4</li>
-                    <li class="list-group-item">5</li>
+                    <li class="list-group-item mb-1 list-group-item-action">Ética hacker</li>
+                    <li class="list-group-item mb-1 list-group-item-action">Questões Jurídicas corporativas</li>
+                    <li class="list-group-item mb-1 list-group-item-action">Como é trabalhar na area</li>
+                    <li class="list-group-item mb-1 list-group-item-action">Mercado de trabalho</li>
+                    <li class="list-group-item mb-1 list-group-item-action">Leis de Cyber Segurança</li>
                 </ul>
             </div>
         </div>
