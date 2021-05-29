@@ -44,3 +44,30 @@ export const leisMessage = `
 As Leis visam garantir os deveres e direitos sociais. Levando em consideração este preceito, a internet até então conhecida por terra sem lei, via em seu meio muitas oportunidades de crimes que não eram punidos ou devidamente corrigido durante toda sua jornada online. Além disso, a falta de premissa que garante a integridade dos dados que circulam na internet cresceu muito com a globalização e por isso, houve a necessidade da criação de uma lei que regesse todo esse meio cibernético.
 
 E foi quando nasceu o projeto de Lei LGPD, a regulamentação brasileira, baseada na GRPD europeia, visando garantir o direito da proteção dos dados, revogando mais transparência das empresas detentoras destas informações. Em resumo, qualquer informação sua só deve ser coletada com sua autorização prévia e guardada pelo temo determinado por você. `.replace(/(?!\w|\s|\n)/,"");
+
+
+export const conteudoListas = [
+    {
+        titulo: 'Ética hacker',
+        corpo: `As leis de segurança cibernética não envolvem somente o mundo do trabalho. Mesmo usando seu computador pessoal, praticar ações que infrinjam a lei têm consequências reais, e, acredite, é possível rastrear seus passos.
+        As habilidades dos profissionais de segurança cibernética podem ser usadas de forma negativa ou, de preferência, positiva. A demanda por profissionais que usem seus conhecimentos para o bem, dentro do âmbito jurídico, é muito alta.`
+    },
+    {
+        titulo: 'Questões Jurídicas corporativas',
+        corpo: `A maioria dos países possuem leis voltadas para segurança cibernética, sejam elas referentes a sua vida privada ou corporativa.
+        Caso haja descumprimento da lei, a empresa na qual você trabalha será punida e você poderá perder o seu cargo. Se tratando de vida privada, você pode ser multado ou até mesmo condenado.
+        No geral, em caso de dúvida sobre a legalidade de algo, não faça. Verifique antes com o departamento responsável se não há problemas legais envolvidos com a atividade que você planeja realizar.`
+    },
+    {
+        titulo: 'Como é trabalhar na area',
+        corpo: ``
+    },
+    {
+        titulo: 'Mercado de trabalho',
+        corpo: ``
+    },
+    {
+        titulo: 'Leis de Cyber Segurança',
+        corpo: ``
+    }
+];

@@ -1,4 +1,4 @@
-import { eticaMessage, leisMessage, mercadoMessage, questoesMessage } from "./data.js";
+import { conteudoListas, eticaMessage, leisMessage, mercadoMessage, questoesMessage } from "./data.js";
 import { Card } from "./models/card.js";
 
 const conteudo = [
@@ -35,7 +35,7 @@ const conteudo = [
 ]
 
 let loaded = false;
-
+let lis;
 let heavy = [0,0,0,0,0];
 let find = document.querySelector("#find");
 let b = document.querySelector("#main div div");
@@ -49,9 +49,20 @@ if(loaded){
     d.hidden = true;
 }
 
+
+
+for(let i = 0; i<conteudoListas.length; i++){
+    let li = document.createElement('li');
+    li.classList = "list-group-item mb-1 list-group-item-action";
+    li.innerHTML = `<header><b>${conteudoListas[i].titulo}</b></header>
+                    <span hidden>${conteudoListas[i].corpo}</span>`;
+    f.appendChild(li);
+}
+
+
 f.addEventListener('click',(e)=>{
     let index = 0;
-    let lis = f.querySelectorAll('li');
+    lis = f.querySelectorAll('li');
     for(index = 0; index < lis.length; index++){
         if(lis[index].textContent.includes(e.target.textContent)){
             break;
@@ -108,7 +119,7 @@ find.addEventListener('keyup',(e)=>{
     console.log(index)
     console.log(heavy);
 });
-
+let last = null;
 function setConteudo(index){
     if(conteudo[index]?.title){
         if(!loaded){
@@ -121,5 +132,10 @@ function setConteudo(index){
         c.appendChild(a.textContent);
         b.removeChild(b.firstChild);
         b.appendChild(a.card)
+        if(last){
+            last.hidden = true;
+        }
+        last = lis[index].querySelector('span');
+        last.hidden = false;
     }
 }
