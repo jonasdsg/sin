@@ -1,4 +1,4 @@
-import { eticaMessage, mercadoMessage } from "./data.js";
+import { eticaMessage, leisMessage, mercadoMessage, questoesMessage } from "./data.js";
 import { Card } from "./models/card.js";
 
 const conteudo = [
@@ -9,10 +9,10 @@ const conteudo = [
         linkDoc:'https://drive.google.com/file/d/1MUsTrFhbB1jPpMea0SrO47Da5OSnx3Sn/view?usp=sharing'
     },
     {
-        videoUrl:null,
-        title:null,
-        message:null,
-        linkDoc:null
+        videoUrl:'https://www.youtube.com/embed/S6kJ98BJruA',
+        title:'Questões jurídicas corporativas',
+        message:questoesMessage,
+        linkDoc:'https://drive.google.com/file/d/1jGnO4c5qJiXFJ7cBQ3ZEn-wLS2boLdqR/view?usp=sharing'
     },
     {
         videoUrl:null,
@@ -27,10 +27,10 @@ const conteudo = [
         linkDoc:'https://drive.google.com/file/d/1Lh-OciuUTc3xmY3ewPZQgyD4qhMTREDS/view?usp=sharing'
     },
     {
-        videoUrl:null,
-        title:null,
-        message:null,
-        linkDoc:null
+        videoUrl:'https://www.youtube.com/embed/oFRROvMVUWQ',
+        title:'Entenda: O que é e pra que serve a LGPD?',
+        message:leisMessage,
+        linkDoc:'https://drive.google.com/file/d/1-nbus7sa6qlqG2-VP2WGM_vdML6cBKGw/view?usp=sharing'
     },
 ]
 
