@@ -74,6 +74,12 @@ f.addEventListener('click',(e)=>{
 d.addEventListener('click',(e)=>{
     if(d.value){
         c.hidden = !c.hidden;
+        if(c.hidden){
+            f.parentElement.classList = "col-md-12";
+        }
+        else{
+            f.parentElement.classList = "col-md-12 col-lg-4";
+        }
     }
 })
 
