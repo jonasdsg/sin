@@ -2,9 +2,13 @@ body header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 70px;
     background-color: #3000E0;
 }
 li header {
+    height: 50px;
     background-color: white;
+}
+#find{
+    height: 50px;
 }

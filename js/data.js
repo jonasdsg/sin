@@ -45,6 +45,13 @@ As Leis visam garantir os deveres e direitos sociais. Levando em consideração 
 
 E foi quando nasceu o projeto de Lei LGPD, a regulamentação brasileira, baseada na GRPD europeia, visando garantir o direito da proteção dos dados, revogando mais transparência das empresas detentoras destas informações. Em resumo, qualquer informação sua só deve ser coletada com sua autorização prévia e guardada pelo temo determinado por você. `.replace(/(?!\w|\s|\n)/,"");
 
+export const trabalhoNaAreaMessage = `
+As vantagens de trabalhar na área são inúmeras. Além, de ser um setor que tem alto índice de empregabilidade, com diversas oportunidades de emprego e salários acima da média do mercado de trabalho.
+E o mais curioso desse assunto é que: saiu um Estudo do International Information System Security Certort Consortium, que é uma organização especializada em treinamento e certificações para profissionais de segurança cibernética, revela que há um déficit de mão de obra na profissão de 4,07 milhões.
+Outro benefício é que os especialistas em defesa e segurança cibernética podem atuar em empresas de diferentes setores da economia, sejam elas de pequeno, médio ou grande porte. O profissional encontra oportunidades também em empresas de desenvolvimento de software, startups, empresas de tecnologia e, até mesmo, em órgãos públicos.
+E nos dias atuais, em decorrência da pandemia do coronavírus, as empresas tiveram que colocar um grande contingente de empregados para trabalhar em home Office. Com isso, o fator segurança da informação fica ainda mais importante do que já era.
+E a como a tendência de manter o trabalho home Office por muitas empresas, mais profissionais de segurança terão de ser contratados.
+`;
 
 export const conteudoListas = [
     {
@@ -60,14 +67,22 @@ export const conteudoListas = [
     },
     {
         titulo: 'Como é trabalhar na area',
-        corpo: ``
+        corpo: `Dependendo do seu interesse em segurança cibernética, diferentes tipos de empregos podem estar disponíveis para você, e podem exigir certificações de qualificações profissionais específicas. Por exemplo, um especialista em teste de invasão, também conhecido como um hacker ético, pesquisa eexplora as vulnerabilidades de segurança em aplicativos, redes e sistemas. Para se tornar um
+        especialista em teste de penetração, você precisará adquirir experiência em outros empregos de TI, como administrador de segurança, administrador de rede e administrador do sistema. Cada um desses empregos requer seu próprio conjunto de qualificações profissionais que irá ajudá-lo a se
+        tornar um bem valioso para uma empresa.`
     },
     {
         titulo: 'Mercado de trabalho',
-        corpo: ``
+        corpo: `A segurança da informação e privacidade de dados nunca esteve tanto em alta no mercado de trabalho como está hoje em dia. 
+        O mercado busca cada vez mais por profissionais com capacidade técnica, que auxiliem as empresas a estruturar suas respectivas estratégias de segurança, dado a quantidade de problemas existentes atualmente, seja através de ataques ou até mesmo por falhas de programação/estruturação de solução, ocasionando, por exemplo, vazamento de dados e muitas perdas para a empresa`
     },
     {
         titulo: 'Leis de Cyber Segurança',
-        corpo: ``
+        corpo: `As Leis visam garantir os deveres e direitos sociais. Levando em consideração este
+        preceito, a internet até então conhecida por terra sem lei, via em seu meio muitas
+        oportunidades de crimes que não eram punidos ou devidamente corrigido durante toda sua
+        jornada online. Além disso, a falta de premissa que garante a integridade dos dados que
+        circulam na internet cresceu muito com a globalização e por isso, houve a necessidade da
+        criação de uma lei que regesse todo esse meio cibernético.`
     }
 ];

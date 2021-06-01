@@ -1,4 +1,4 @@
-import { conteudoListas, eticaMessage, leisMessage, mercadoMessage, questoesMessage } from "./data.js";
+import { conteudoListas, eticaMessage, leisMessage, mercadoMessage, questoesMessage, trabalhoNaAreaMessage } from "./data.js";
 import { Card } from "./models/card.js";
 
 const conteudo = [
@@ -15,10 +15,10 @@ const conteudo = [
         linkDoc:'https://drive.google.com/file/d/1jGnO4c5qJiXFJ7cBQ3ZEn-wLS2boLdqR/view?usp=sharing'
     },
     {
-        videoUrl:null,
-        title:null,
-        message:null,
-        linkDoc:null
+        videoUrl:'https://www.youtube.com/embed/ff0llG4atYs',
+        title:'Dicas pra quem quer começar na área da segurança da informação',
+        message:trabalhoNaAreaMessage,
+        linkDoc:'https://drive.google.com/file/d/1hpz9gRF90wZPSgJhPv80Z3ZEDHfy2V4n/view?usp=sharing'
     },
     {
         videoUrl:'https://www.youtube.com/embed/OSWGHhjSFbs?start=33',
@@ -42,6 +42,10 @@ let b = document.querySelector("#main div div");
 let c = document.querySelector("#textContent");
 let d = document.querySelector("#description");
 let f = document.querySelector("#topics ul");
+let fbutton = document.querySelector("#fbutton");
+let form = document.querySelector('form');
+fbutton.addEventListener('click',e => search(e))
+form.addEventListener('submit',e => search(e))
 
 if(loaded){
     b.classList = "";
@@ -84,6 +88,33 @@ d.addEventListener('click',(e)=>{
 })
 
 find.addEventListener('keyup',(e)=>{
+    search(e);
+});
+
+let last = null;
+function setConteudo(index){
+    if(conteudo[index]?.title){
+        if(!loaded){
+            loaded = true;
+            b.classList = "col-md-12 col-lg-8 ratio ratio-16x9 mb-2";
+            c.classList = "col-md-12 col-lg-8 mb-2";
+        }
+        let a = new Card(conteudo[index].videoUrl,conteudo[index].title,conteudo[index].message,conteudo[index].linkDoc);
+        c.removeChild(c.firstChild);
+        c.appendChild(a.textContent);
+        b.removeChild(b.firstChild);
+        b.appendChild(a.card)
+        if(last){
+            last.hidden = true;
+        }
+        last = lis[index].querySelector('span');
+        last.hidden = false;
+    }
+}
+
+function search(e){
+    e.preventDefault();
+
     heavy = [0,0,0,0,0];
     console.log(find.value);
     let i = 0;
@@ -124,24 +155,4 @@ find.addEventListener('keyup',(e)=>{
     setConteudo(index);
     console.log(index)
     console.log(heavy);
-});
-let last = null;
-function setConteudo(index){
-    if(conteudo[index]?.title){
-        if(!loaded){
-            loaded = true;
-            b.classList = "col-md-12 col-lg-8 ratio ratio-16x9 mb-2";
-            c.classList = "col-md-12 col-lg-8 mb-2";
-        }
-        let a = new Card(conteudo[index].videoUrl,conteudo[index].title,conteudo[index].message,conteudo[index].linkDoc);
-        c.removeChild(c.firstChild);
-        c.appendChild(a.textContent);
-        b.removeChild(b.firstChild);
-        b.appendChild(a.card)
-        if(last){
-            last.hidden = true;
-        }
-        last = lis[index].querySelector('span');
-        last.hidden = false;
-    }
 }
