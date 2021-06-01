@@ -61,9 +61,7 @@ export const conteudoListas = [
     },
     {
         titulo: 'Questões Jurídicas corporativas',
-        corpo: `A maioria dos países possuem leis voltadas para segurança cibernética, sejam elas referentes a sua vida privada ou corporativa.
-        Caso haja descumprimento da lei, a empresa na qual você trabalha será punida e você poderá perder o seu cargo. Se tratando de vida privada, você pode ser multado ou até mesmo condenado.
-        No geral, em caso de dúvida sobre a legalidade de algo, não faça. Verifique antes com o departamento responsável se não há problemas legais envolvidos com a atividade que você planeja realizar.`
+        corpo: `Você não precisa ser um funcionário para estar sujeito às leis de segurança cibernética. Na sua vida privada, você pode ter a oportunidade e as qualificações profissionais para hackear o computador oua rede de outra pessoa. Há um velho ditado, "Só porque você pode não significa que deve". Tenha isso em mente. A maioria dos hackers deixa rastro, conscientemente ou não, e esses rastros podem ser seguidos para achar o hacker. `
     },
     {
         titulo: 'Como é trabalhar na area',
