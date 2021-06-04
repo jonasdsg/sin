@@ -82,5 +82,9 @@ export const conteudoListas = [
         jornada online. Além disso, a falta de premissa que garante a integridade dos dados que
         circulam na internet cresceu muito com a globalização e por isso, houve a necessidade da
         criação de uma lei que regesse todo esse meio cibernético.`
+    },
+    {
+        titulo: 'Autores',
+        corpo:''
     }
 ];

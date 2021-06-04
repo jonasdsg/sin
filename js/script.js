@@ -93,6 +93,10 @@ find.addEventListener('keyup',(e)=>{
 
 let last = null;
 function setConteudo(index){
+
+    lis[index].setAttribute('data-bs-target','#autores');
+    lis[index].setAttribute('data-bs-toggle','modal');
+    
     if(conteudo[index]?.title){
         if(!loaded){
             loaded = true;
