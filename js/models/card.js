@@ -39,7 +39,7 @@ export class Card {
                             </div>
                             <div class="modal-body">
                                 <p class="lead">${this.reduceMessage(this.message,MAX_MODAL_DESCRIPTION)}</p>
-                                <p class="lead">Saiba mais baixando o relatório desta seção.👇 😉</p>
+                                <p class="lead">Saiba mais acessando o <a href="https://drive.google.com/file/d/1ttVzpGbUCHqScp2qxZkZrnMcdq6vt7Mp/view?usp=sharing">conteúdo completo do curso</a> ou baixando o relatório desta seção.👇 😉</p>
                             </div>
                             <div class="modal-footer">
                             <a href="${this.downloadContentLink}" class="btn btn-primary">Download</a>
