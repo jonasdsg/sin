@@ -1,4 +1,4 @@
-import { conteudoListas, eticaMessage, leisMessage, mercadoMessage, questoesMessage, trabalhoNaAreaMessage } from "./data.js";
+import { conteudoListas, eticaMessage, leisMessage, mercadoMessage, narutoMessage, questoesMessage, trabalhoNaAreaMessage } from "./data.js";
 import { Card } from "./models/card.js";
 
 const conteudo = [
@@ -32,10 +32,17 @@ const conteudo = [
         message:leisMessage,
         linkDoc:'https://drive.google.com/file/d/1-nbus7sa6qlqG2-VP2WGM_vdML6cBKGw/view?usp=sharing'
     },
+    {
+        videoUrl:'https://www.youtube.com/embed/Rp5bzs0upc8',
+        title:'Lute como nunca, perca como sempre!',
+        message:narutoMessage,
+        linkDoc:'easteregg'
+    }
 ]
-
+let egg = false;
 let loaded = false;
 let lis;
+let autores = null;
 let heavy = [0,0,0,0,0];
 let find = document.querySelector("#find");
 let b = document.querySelector("#main div div");
@@ -61,6 +68,7 @@ for(let i = 0; i<conteudoListas.length; i++){
     li.innerHTML = `<header><b>${conteudoListas[i].titulo}</b></header>
                     <span hidden>${conteudoListas[i].corpo}</span>`;
     f.appendChild(li);
+    autores = li;
 }
 
 
@@ -93,9 +101,6 @@ find.addEventListener('keyup',(e)=>{
 
 let last = null;
 function setConteudo(index){
-
-    lis[index].setAttribute('data-bs-target','#autores');
-    lis[index].setAttribute('data-bs-toggle','modal');
     
     if(conteudo[index]?.title){
         if(!loaded){
@@ -160,3 +165,33 @@ function search(e){
     console.log(index)
     console.log(heavy);
 }
+
+autores.addEventListener('click',()=>{
+    autores.childNodes[2].hidden = !autores.childNodes[2].hidden;
+    autores.childNodes[2].innerHTML = `
+    <p class="lead d-flex flex-column mt-4">
+                            <a href="https://www.linkedin.com/in/jonasdsg/">@Jonas_Góes</a>
+                            <a href="https://www.linkedin.com/in/jonathanflorencio">@Jonathan_Lima</a>
+                            <a href="https://www.linkedin.com/in/arthuroferreira">@Arthur_Ferreira</a>  
+                            <a href="https://www.linkedin.com/in/michel-bernardo/">@Michel_Silveira</a>
+                            <a href="https://www.linkedin.com/in/victor-lima-212755103/">@Victor_Lima</a>
+                            <a href="https://www.linkedin.com/in/jéssica-oliveira-26355970">@Jéssica_Silva</a>
+                            <a href="https://www.linkedin.com/in/luiza-cuervo-92a569b2/">@Luiza_Cuervo</a>
+                            <a href="https://www.linkedin.com/in/carlos-eduardo-barros-a6754223">@Carlos_Barros</a>
+                        </p>
+    `
+    setTimeout(()=>{
+        //document.querySelector('iframe').src = document.querySelector('iframe').src+'&autoplay=1'
+        console.log('clicou')
+        document.querySelector('iframe').click()
+    },2000)
+    let body = document.querySelector('body');
+    body.style.backgroundColor = "#808080";
+    body.style.color = "#e9e9e9";
+    body.querySelector("header").style.backgroundColor = "#3f3f3f";
+    if(!egg){
+        body.querySelector("#textContent").hidden = true;
+    }
+    egg = true;
+    
+})

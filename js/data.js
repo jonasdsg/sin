@@ -52,6 +52,21 @@ Outro benefício é que os especialistas em defesa e segurança cibernética pod
 E nos dias atuais, em decorrência da pandemia do coronavírus, as empresas tiveram que colocar um grande contingente de empregados para trabalhar em home Office. Com isso, o fator segurança da informação fica ainda mais importante do que já era.
 E a como a tendência de manter o trabalho home Office por muitas empresas, mais profissionais de segurança terão de ser contratados.
 `;
+export const narutoMessage = `O Naruto pode ser um pouco duro às vezes
+Talvez você não saiba disso
+Mas o Naruto também
+Cresceu sem pai
+
+Na verdade, ele nunca conheceu nenhum de seus pais
+E nunca teve nenhum amigo em nossa aldeia
+Mesmo assim, eu nunca vi ele chorar
+Ficar zangado ou se dar por vencido
+
+Ele está sempre disposto a melhorar
+Ele quer ser respeitado, é o sonho dele
+E o Naruto daria a vida por isso sem hesitar
+Meu palpite é que ele se cansou de chorar
+E decidiu fazer alguma coisa a respeito`;
 
 export const conteudoListas = [
     {
