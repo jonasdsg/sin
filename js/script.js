@@ -191,6 +191,6 @@ autores.addEventListener('click',()=>{
     body.querySelector("header").style.backgroundColor = "#3f3f3f";
     
     body.querySelector("#textContent").hidden = !egg;
-    egg = true;
+    egg = !egg;
     
 })
