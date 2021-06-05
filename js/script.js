@@ -189,9 +189,8 @@ autores.addEventListener('click',()=>{
     body.style.backgroundColor = "#808080";
     body.style.color = "#e9e9e9";
     body.querySelector("header").style.backgroundColor = "#3f3f3f";
-    if(!egg){
-        body.querySelector("#textContent").hidden = true;
-    }
+    
+    body.querySelector("#textContent").hidden = !egg;
     egg = true;
     
 })
