@@ -39,7 +39,7 @@ const conteudo = [
         linkDoc:'easteregg'
     }
 ]
-let egg = false;
+let egg = 0;
 let loaded = false;
 let lis;
 let autores = null;
@@ -77,6 +77,9 @@ f.addEventListener('click',(e)=>{
     lis = f.querySelectorAll('li');
     for(index = 0; index < lis.length; index++){
         if(lis[index].textContent.includes(e.target.textContent)){
+            if(!(e.target.textContent.includes(autores.childNodes[0].textContent))){
+                d.parentElement.hidden = false;
+            }
             break;
         }
     }
@@ -190,7 +193,9 @@ autores.addEventListener('click',()=>{
     body.style.color = "#e9e9e9";
     body.querySelector("header").style.backgroundColor = "#3f3f3f";
     
-    body.querySelector("#textContent").hidden = !egg;
-    egg = !egg;
-    
+    body.querySelector("#textContent").hidden = !(egg == 3);
+    d.parentElement.hidden= true;
+    egg = (egg == 3) ? 0 : egg+1;
+    console.log(find)
+    find.value = (egg == 1) ? "Seriously?" : (egg == 2) ? "Oh No!": "That what she said!";
 })
